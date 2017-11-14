@@ -14,6 +14,16 @@
 
 
 <ion-content padding>
+    <ion-item>
+        <ion-avatar  item-start>
+          <img  src="{{pathForImage(lastImage)}}" >
+        </ion-avatar>
+        <ion-buttons></ion-buttons>
+        <h3>Take a Selfie!</h3>
+        <button ion-button  (click)="presentActionSheet()">
+          <ion-icon name="camera"></ion-icon>Select Image
+        </button>
+    </ion-item>
     <form (ngSubmit)="logForm()">
         <ion-item>
           <ion-label color="primary" stacked>Name</ion-label>
