@@ -21,7 +21,7 @@ declare var cordova: any;
 })
 export class SignUpPage {
 
-  lastImage: string = null;
+  lastImage1: string = null;
   loading: Loading;
 
   constructor(public navCtrl: NavController, private camera: Camera,

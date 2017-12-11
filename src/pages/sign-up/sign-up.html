@@ -16,7 +16,9 @@
 <ion-content padding>
     <ion-item>
         <ion-avatar  item-start >
-          <img src="{{pathForImage(lastImage)}}"  >
+            <ion-icon class="photo1"  *ngIf="lastImage1==null" name="add-circle" large></ion-icon>
+          <img src="{{pathForImage(lastImage)}}" class="avatar1" *ngIf="lastImage1!=null" >
+
         </ion-avatar>
         <h3>Take a Selfie!</h3>
         <button ion-button  (click)="presentActionSheet()">
