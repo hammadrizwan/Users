@@ -1,0 +1,193 @@
+<!--
+  Generated template for the CreatePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Create Package</ion-title>
+  
+  <ion-segment [(ngModel)]="pet">
+    <ion-segment-button value="S1">
+    </ion-segment-button>
+    <ion-segment-button value="S2">
+    </ion-segment-button>
+    <ion-segment-button value="S3">
+      </ion-segment-button>
+  </ion-segment>
+</ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+      <div [ngSwitch]="pet">
+        <ion-list no-lines *ngSwitchCase="'S1'">
+          
+            <form>
+         <ion-item>
+            <button ion-button large outline round>
+               <ion-icon name="camera"></ion-icon>
+              </button>
+         </ion-item>
+         <ion-row > <ion-col col-12>
+         <ion-item>
+            <ion-label floating>Package Name</ion-label>
+            <ion-input  type="text"></ion-input>
+         </ion-item>
+         </ion-col></ion-row>
+         <ion-row > <ion-col col-12>
+            <ion-item>
+                <ion-label floating>Description</ion-label>
+                <ion-textarea></ion-textarea>
+             </ion-item>
+             </ion-col>
+            </ion-row>
+          </form>
+                 <ion-list radio-group [(ngModel)]="PSize" no-lines>
+                    
+                      <ion-label>Package size</ion-label>
+                      <ion-row >
+                          <ion-col>
+                        <ion-item>
+                         <ion-label><ion-icon name="icon-envelop"></ion-icon></ion-label>
+                        <ion-radio value="Small"></ion-radio>
+                        </ion-item>
+                        </ion-col>
+                      
+                        <ion-col>
+                      <ion-item>
+                        <ion-label><ion-icon name="icon-dropbox"></ion-icon></ion-label>
+                        <ion-radio value="Medium"></ion-radio>
+                      </ion-item>
+                      </ion-col>
+                    
+                      <ion-col>
+                      <ion-item>
+                        <ion-label><ion-icon name="icon-television"></ion-icon></ion-label>
+                        <ion-radio value="Large"></ion-radio>
+                      </ion-item>
+                    </ion-col>
+
+                    <ion-col>
+                      <ion-item>
+                        <ion-label><ion-icon name="icon-armchair"></ion-icon></ion-label>
+                        <ion-radio value="X-Large"></ion-radio>
+                      </ion-item>
+                    </ion-col>
+
+                    <ion-col>
+                      <ion-item>
+                        <ion-label><ion-icon name="icon-fridge"></ion-icon></ion-label>
+                        <ion-radio value="Huge"></ion-radio>
+                      </ion-item>
+                      </ion-col>
+                    </ion-row>
+                    </ion-list> 
+            
+      </ion-list>
+
+
+        <ion-list no-lines *ngSwitchCase="'S2'">
+          <ion-title>Select Transport Type</ion-title>
+            <ion-row radio-group [(ngModel)]="TType">                
+                <ion-col>
+                  <ion-item>
+                    <ion-label>Freelance</ion-label>
+                    <ion-radio value="Flancee"></ion-radio>
+                  </ion-item>
+                </ion-col>
+                <ion-col>
+                  <ion-item>
+                   <ion-label>Courier Service</ion-label>
+                    <ion-radio value="CService"></ion-radio>
+                  </ion-item>
+                </ion-col>
+              </ion-row>
+
+              <ion-title>Contact Us For Expensive Items</ion-title> 
+        </ion-list>
+
+
+        <ion-list no-lines *ngSwitchCase="'S3'">
+            <div [ngSwitch]="TType">
+              <div *ngSwitchCase="'Flancee'">
+                <div [ngSwitch]="true">
+                <ion-row radio-group>                
+                    <ion-col *ngSwitchCase="PSize === 'Small'">
+                      <ion-item>
+                        <ion-label>Bike</ion-label>
+                        <ion-radio value="Bike"></ion-radio>
+                      </ion-item>
+                    </ion-col>
+                    <ion-col *ngSwitchCase="PSize === 'Small' || PSize === 'Medium'">
+                      <ion-item>
+                       <ion-label>Car</ion-label>
+                        <ion-radio value="Car"></ion-radio>
+                      </ion-item>
+                    </ion-col>
+                    </ion-row>
+                    <ion-row radio-group>
+                    <ion-col *ngSwitchCase="PSize === 'Medium' || PSize === 'Large' || PSize === 'X-Large'">
+                        <ion-item>
+                         <ion-label>Pickup</ion-label>
+                          <ion-radio value="Car"></ion-radio>
+                        </ion-item>
+                      </ion-col>
+                      <ion-col *ngSwitchCase="PSize === 'Large' || PSize === 'X-Large' || PSize === 'Huge'">
+                          <ion-item>
+                           <ion-label>Truck</ion-label>
+                            <ion-radio value="Truck"></ion-radio>
+                          </ion-item>
+                        </ion-col>
+                  </ion-row>
+                  </div>
+                </div>
+                <div *ngSwitchCase="'CService'">
+                    <ion-row radio-group>                
+                        <ion-col>
+                          <ion-item>
+                            <ion-label>DHL</ion-label>
+                            <ion-radio value="DHL"></ion-radio>
+                          </ion-item>
+                        </ion-col>
+                        <ion-col>
+                          <ion-item>
+                           <ion-label>TCS</ion-label>
+                            <ion-radio value="TCS"></ion-radio>
+                          </ion-item>
+                        </ion-col>
+                        </ion-row>
+                        <ion-row radio-group>
+                        <ion-col>
+                            <ion-item>
+                             <ion-label>Leopard Courier</ion-label>
+                              <ion-radio value="Leopard"></ion-radio>
+                            </ion-item>
+                          </ion-col>
+                          <ion-col>
+                              <ion-item>
+                               <ion-label>UPS</ion-label>
+                                <ion-radio value="UPS"></ion-radio>
+                              </ion-item>
+                            </ion-col>
+                      </ion-row>
+                    </div>
+            </div>
+        </ion-list>
+      </div>
+       
+</ion-content>
+
+<ion-footer>
+    <ion-navbar color="primary">
+        <ion-buttons start>
+          <button ion-button icon-left (click)="prev()"><ion-icon name="arrow-back"></ion-icon> Prev</button>
+        </ion-buttons>
+        <ion-buttons end>
+          <button ion-button icon-right (click)="next()">Next <ion-icon name="arrow-forward"></ion-icon></button>
+        </ion-buttons>
+      </ion-navbar>
+</ion-footer>

@@ -12,7 +12,7 @@ $font-path: "../assets/fonts";
 $app-direction: ltr;
 
 
-@import "ionic.globals";
+@import "ionicons";
 
 
 // Shared Variables
@@ -53,8 +53,7 @@ $colors: (
 // --------------------------------------------------
 // Material Design only Sass variables can go here
 
-
-
+$segment-button-md-border-bottom-width: 10px;
 
 // App Windows Variables
 // --------------------------------------------------
