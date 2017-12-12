@@ -46,51 +46,59 @@
              </ion-col>
             </ion-row>
           </form>
-                 <ion-list radio-group [(ngModel)]="PSize" no-lines>
-                    
+
+     <form name="poka">
+                
                       <ion-label>Package size</ion-label>
-                      <ion-row >
-                          <ion-col>
-                        <ion-item>
-                         <ion-label><ion-icon name="icon-envelop"></ion-icon></ion-label>
-                        <ion-radio value="Small"></ion-radio>
-                        </ion-item>
+                      <div class="cc-selector">
+                        <ion-list >
+                            
+                          <ion-row >
+                            <ion-col >
+                         <ion-item >
+                         <div class="center">
+                            <input id="mail" name="PSize" [(ngModel)]="PSize" type="radio" value="Small"   >
+                            <label class="drinkcard-cc mail" for="mail"></label>     
+                            </div>                
+                         </ion-item>
                         </ion-col>
-                      
-                        <ion-col>
-                      <ion-item>
-                        <ion-label><ion-icon name="icon-dropbox"></ion-icon></ion-label>
-                        <ion-radio value="Medium"></ion-radio>
-                      </ion-item>
-                      </ion-col>
-                    
-                      <ion-col>
-                      <ion-item>
-                        <ion-label><ion-icon name="icon-television"></ion-icon></ion-label>
-                        <ion-radio value="Large"></ion-radio>
+                          
+                        <ion-col col-6 >
+                         <ion-item >
+                            <div class="center">
+                            <input id="box" name="PSize" [(ngModel)]="PSize" type="radio" value="Medium">
+                            <label class="drinkcard-cc box" for="box"></label>  
+                            </div>                      
                       </ion-item>
                     </ion-col>
-
-                    <ion-col>
-                      <ion-item>
-                        <ion-label><ion-icon name="icon-armchair"></ion-icon></ion-label>
-                        <ion-radio value="X-Large"></ion-radio>
-                      </ion-item>
-                    </ion-col>
-
-                    <ion-col>
-                      <ion-item>
-                        <ion-label><ion-icon name="icon-fridge"></ion-icon></ion-label>
-                        <ion-radio value="Huge"></ion-radio>
-                      </ion-item>
-                      </ion-col>
                     </ion-row>
-                    </ion-list> 
-            
+
+                    <ion-row>
+                        <ion-col col-6>
+                      <ion-item>
+                          <div class="center">
+                            <input id="tv" name="PSize" [(ngModel)]="PSize" type="radio" value="Large">
+                            <label  class="drinkcard-cc tv" for="tv"></label>       
+                            </div>                 
+                      </ion-item>
+                          </ion-col>
+
+                          <ion-col col-6>
+                      <ion-item>      
+                          <div class="center">
+                              <input id="chair" name="PSize" [(ngModel)]="PSize" type="radio" value="X-Large">                   
+                              <label class="drinkcard-cc chair" for="chair"></label>  
+                              </div>                      
+                      </ion-item>
+                            </ion-col>
+                            </ion-row>
+                        </ion-list>
+                    </div>
+             </form>   
       </ion-list>
 
 
-        <ion-list no-lines *ngSwitchCase="'S2'">
+        <!-- <ion-list no-lines *ngSwitchCase="'S2'">
           <ion-title>Select Transport Type</ion-title>
             <ion-row radio-group [(ngModel)]="TType">                
                 <ion-col>
@@ -176,8 +184,8 @@
                       </ion-row>
                     </div>
             </div>
-        </ion-list>
-      </div>
+        </ion-list>-->
+      </div> 
        
 </ion-content>
 

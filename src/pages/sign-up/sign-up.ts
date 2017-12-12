@@ -95,7 +95,7 @@ export class SignUpPage {
   // Copy the image to a local folder
   private copyFileToLocalDir(namePath, currentName, newFileName) {
     this.file.copyFile(namePath, currentName, cordova.file.dataDirectory, newFileName).then(success => {
-      this.lastImage = newFileName;
+      this.lastImage1 = newFileName;
     }, error => {
       this.presentToast('Error while storing file.');
     });
