@@ -6,20 +6,20 @@
 }
 
 .mail{
-    background-image: url(../../assets/imgs/envelop.svg);
+    background-image: url(../assets/imgs/envelop.svg);
     max-height:50%;
 }
 
 .box{
-    background-image: url(../../assets/imgs/dropbox.svg)
+    background-image: url(../assets/imgs/dropbox.svg)
 }
 
 .tv{
-    background-image: url(../../assets/imgs/television.svg)
+    background-image: url(../assets/imgs/television.svg)
 }
 
 .chair{
-    background-image: url(../../assets/imgs/armchair.svg)
+    background-image: url(../assets/imgs/armchair.svg)
 }
 
 
@@ -52,10 +52,10 @@
 .center{
     
     text-align: center;
-    border-style: solid;
-    border-width: 1px;
-    width:120px;
-    
+}
+
+ion-chip ion-label{
+    font-size: 20px;
 }
 /* Extras */
 

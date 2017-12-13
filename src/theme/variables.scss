@@ -46,14 +46,15 @@ $colors: (
 // --------------------------------------------------
 // iOS only Sass variables can go here
 
-
+$navbar-ios-height: 200px;
 
 
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
 
-$segment-button-md-border-bottom-width: 10px;
+$segment-button-md-border-bottom-width: 5px;
+$note-md-color: darken(rgb(104, 104, 104), 10%);
 
 // App Windows Variables
 // --------------------------------------------------
