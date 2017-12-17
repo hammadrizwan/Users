@@ -1,3 +1,7 @@
-page-home {
-
-}
+$a : 100px;
+ion-avatar img  {
+    width:$a !important;
+    height : $a !important;
+    max-width: $a !important;  //any size
+    max-height: $a !important; //any size
+    }
