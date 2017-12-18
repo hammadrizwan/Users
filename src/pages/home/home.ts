@@ -7,20 +7,11 @@ import { CreatePage } from '../create/create';
 })
 export class HomePage {
   
-  public pages: string[] = [
-    "CreatePage",
-    "ProfilePage",
-    "InProgressPage",
-    "PendingPage",
-    "AccountSettingsPage" 
-  ];
   constructor(public navCtrl: NavController,app: App, menu: MenuController) {
-    menu.enable(true);
+    
   }
 
 
-  openPage(p){
-    this.navCtrl.push(p);
-  }
+ 
 
 }

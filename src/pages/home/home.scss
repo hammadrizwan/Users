@@ -1,7 +1,14 @@
-$a : 100px;
+$a : 140px;
 ion-avatar img  {
     width:$a !important;
     height : $a !important;
-    max-width: $a !important;  //any size
-    max-height: $a !important; //any size
+    // max-width: $a !important;  //any size
+    // max-height: $a !important; //any size
     }
+
+.aa{
+    background-color: #2a4262;
+}
+
+ion-slides .swiper-pagination
+ { @extend .swiper-pagination-white }
