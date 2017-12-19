@@ -15,7 +15,7 @@ import { NotificationPage } from '../pages/notification/notification';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = HomePage;
+  rootPage:any = CreatePage;
   @ViewChild(Nav) nav: Nav;
   pages: Array<{title: string, component: any}>;
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen,) {

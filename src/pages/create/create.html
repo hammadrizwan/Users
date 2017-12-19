@@ -117,33 +117,43 @@
           <ion-title>Select Transport Type</ion-title>
         </div>
         <form name="dodo">
-            <div > <!-- Insert the cc selector here -->
+            
               <ion-list>
-                <ion-row>                  
-                    <ion-item> <!-- insert buttons stacked here -->
+                  <!-- <div class="cc-selector" > Insert the cc selector here -->
+                                 
+                    <ion-item class="poka"> <!-- insert buttons stacked here -->
                       <div class="center">
-                        <input id="FLance" name="TType" [(ngModel)]="TType" type="radio" value="FLance">                   
-                        <label> Freelance </label>
+                        <!-- <input  id="FLance" name="TType" [(ngModel)]="TType" type="radio" value="FLance">                   
+                        <label class="drinkcard-cc FLance" for="FLance"> Freelance </label> -->         
+                      <label class="labl">
+                          <input name="TType" [(ngModel)]="TType" type="radio" value="FLance"/>
+                          <div>FREELANCE</div>
+                      </label>
                       </div>
                     </ion-item>
-                  </ion-row>
-                  <ion-row>
-                    <ion-item> <!-- insert buttons stacked here -->
-                      <div class="center">
-                        <input id="CService" name="TType" [(ngModel)]="TType" type="radio" value="CService">                   
-                        <label> Courier </label>
-                      </div>
+                  
+                  
+                    <ion-item  class="poka"> <!-- insert buttons stacked here -->
+                       <div class="center">
+                        <!-- <input id="CService" name="TType" [(ngModel)]="TType" type="radio" value="CService">                   
+                        <label class="drinkcard-cc CService" for="CService"> Courier </label> --> 
+                      <label class="labl">
+                          <input  name="TType" [(ngModel)]="TType" type="radio" value="CService" />
+                          <div>Courier</div>
+                      </label>
+                    </div> 
                     </ion-item>              
-                </ion-row>
-                <ion-row>
+                
+              <!-- </div> -->
+                
                   <ion-item> <!-- insert buttons stacked here -->
                     <div class="center">                                         
                       <label> Contact customer support for Expensive Items </label>
                     </div>
                   </ion-item>              
-              </ion-row>
+             
               </ion-list>
-            </div>
+            
         </form>
       </ion-list>
 
@@ -348,7 +358,7 @@
        
 </ion-content>
 
-<ion-footer>
+<!-- <ion-footer>
     <ion-navbar mode="ios" color="primary">
         <ion-buttons start>
           <button ion-button icon-left (click)="prev()"><ion-icon name="arrow-back"></ion-icon> Prev</button>
@@ -357,4 +367,4 @@
           <button ion-button icon-right (click)="next()">Next <ion-icon name="arrow-forward"></ion-icon></button>
         </ion-buttons>
       </ion-navbar>
-</ion-footer>
+</ion-footer> -->

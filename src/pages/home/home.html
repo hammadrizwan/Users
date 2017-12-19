@@ -10,6 +10,9 @@
 </ion-header>
 
 <ion-content >
+  
+    <button ion-button large full mode="ios" >Create Package</button>
+ 
   <ion-item>
  <ion-slides pager="true" >
    <ion-slide>
@@ -28,11 +31,51 @@
   <ion-title>
     Stats
   </ion-title>
-  <round-progress 
-  [current]="62" 
-  [max]="100" 
-  [radius]="25"
-  [stroke]="5"></round-progress>
-</ion-item>
-      
+  <ion-row>
+    <ion-col>
+        <div class="progress-wrapper">
+            <round-progress 
+            [current]="62" 
+            [max]="100" 
+            [radius]="35"
+            [stroke]="5"></round-progress>
+            <div class="text">
+              62
+            </div>
+        </div>
+  </ion-col>
+  <ion-col>
+          
+        <div class="progress-wrapper">
+          <round-progress 
+          [current]="70" 
+          [max]="100" 
+          [radius]="35"
+          [stroke]="5"></round-progress>
+          
+          <div class="text">
+            70
+          </div>         
+        </div>
+</ion-col>
+<ion-col>
+    <div class="progress-wrapper">
+      <round-progress 
+      [current]="30" 
+      [max]="100" 
+      [radius]="35"
+      [stroke]="5"></round-progress>
+      <div class="text">
+        35
+      </div>
+    </div>
+</ion-col>
+</ion-row>
+ </ion-item>
+ <ion-item>
+   <ion-title>
+     Pending Reviews
+   </ion-title>
+ </ion-item>
+
 </ion-content>

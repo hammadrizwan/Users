@@ -23,6 +23,8 @@
 }
 
 
+
+
 .cc-selector input:active +.drinkcard-cc{opacity: .9;}
 .cc-selector input:checked +.drinkcard-cc{
     -webkit-filter: none;
@@ -49,6 +51,13 @@
             filter: brightness(1.2) grayscale(.5) opacity(.9);
 }
 
+
+.poka:hover{
+    background-color: #bec0c4;
+}
+
+
+
 .center{
     
     text-align: center;
@@ -58,6 +67,27 @@ ion-chip ion-label{
     font-size: 20px;
 }
 /* Extras */
+
+.labl {
+    width: 400px;
+}
+.labl > input{ /* HIDE RADIO */
+    visibility: hidden; /* Makes input not-clickable */
+    position: absolute; /* Remove input from document flow */
+}
+.labl > input + div{ /* DIV STYLES */
+    cursor:pointer;
+    border:2px solid transparent;
+    -webkit-transition: all 100ms ease-in;
+    -moz-transition: all 100ms ease-in;
+         transition: all 100ms ease-in;
+}
+
+ .labl > input:checked + div { /* (RADIO CHECKED) DIV STYLES */
+    
+        background-color: #bec0c4;
+
+}
 
 
 

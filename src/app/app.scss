@@ -14,3 +14,10 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+$a : 100px;
+ion-avatar img  {
+    width:$a !important;
+    height : $a !important;
+    // max-width: $a !important;  //any size
+    // max-height: $a !important; //any size
+    }
