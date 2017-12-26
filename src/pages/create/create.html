@@ -41,7 +41,7 @@
          <ion-item>
             <div class="center">
             <button ion-button block large outline round>
-               <ion-icon name="camera"></ion-icon>
+               <ion-icon name="camera" color="danger"></ion-icon>
               </button>
               </div>
          </ion-item>
@@ -63,7 +63,7 @@
 
      <form name="poka">
                 
-                      <ion-label>Package size</ion-label>
+                      <ion-label  class="lbl">Package size</ion-label>
                       <div class="cc-selector">
                         <ion-list no-padding >
                             
@@ -114,45 +114,30 @@
 
       <ion-list no-lines *ngSwitchCase="'S2'">
         <div class="center">
-          <ion-title>Select Transport Type</ion-title>
+          <ion-label class="lbl">Select Transport Type</ion-label>
         </div>
         <form name="dodo">
             
-              <ion-list>
-                  <!-- <div class="cc-selector" > Insert the cc selector here -->
+              <ion-list  class="donate-now">
+                 
                                  
-                    <ion-item class="poka"> <!-- insert buttons stacked here -->
-                      <div class="center">
-                        <!-- <input  id="FLance" name="TType" [(ngModel)]="TType" type="radio" value="FLance">                   
-                        <label class="drinkcard-cc FLance" for="FLance"> Freelance </label> -->         
-                      <label class="labl">
-                          <input name="TType" [(ngModel)]="TType" type="radio" value="FLance"/>
-                          <div>FREELANCE</div>
-                      </label>
-                      </div>
+                    <ion-item> 
+                        <input id="FLance" name="TType" [(ngModel)]="TType" type="radio" value="FLance"/>
+                        <label for="FLance">FREELANCE</label>                      
                     </ion-item>
                   
                   
-                    <ion-item  class="poka"> <!-- insert buttons stacked here -->
-                       <div class="center">
-                        <!-- <input id="CService" name="TType" [(ngModel)]="TType" type="radio" value="CService">                   
-                        <label class="drinkcard-cc CService" for="CService"> Courier </label> --> 
-                      <label class="labl">
-                          <input  name="TType" [(ngModel)]="TType" type="radio" value="CService" />
-                          <div>Courier</div>
-                      </label>
-                    </div> 
+                    <ion-item >                      
+                      <input id="CService" name="TType" [(ngModel)]="TType" type="radio" value="CService" />
+                      <label for="CService">Courier</label>
                     </ion-item>              
-                
-              <!-- </div> -->
-                
-                  <ion-item> <!-- insert buttons stacked here -->
-                    <div class="center">                                         
-                      <label> Contact customer support for Expensive Items </label>
-                    </div>
+            
+                  </ion-list>
+                  <ion-item>                                                           
+                      <ion-label> Contact customer support for Expensive Items </ion-label>
                   </ion-item>              
              
-              </ion-list>
+              
             
         </form>
       </ion-list>
@@ -201,61 +186,65 @@
         </div>
 
         <div *ngIf="TType === 'CService'">
-
-            <ion-row>
+            <div class="cc-selector">
+            <ion-item class="center">
+              <ion-label  class="lbl">
+                Select Courier Service
+              </ion-label>
+            </ion-item>
                 <ion-item> <!-- insert buttons stacked here -->
                   <div class="center">
                       <input id="DHL" name="TType"  type="radio" value="DHL">                   
-                      <label> DHL </label>
+                      <label class="drinkcard-cc DHL" for="DHL"></label>
                   </div>
                 </ion-item>              
-            </ion-row>
+            
 
-            <ion-row>
+            
                 <ion-item> <!-- insert buttons stacked here -->
                   <div class="center">
                       <input id="TCS" name="TType"  type="radio" value="TCS">                   
-                      <label> TCS </label>
+                      <label class="drinkcard-cc TCS" for="TCS"></label>
                   </div>
                 </ion-item>              
-            </ion-row>
+            
 
-            <ion-row>
+            
                 <ion-item> <!-- insert buttons stacked here -->
                   <div class="center">
                       <input id="UPS" name="TType"  type="radio" value="UPS">                   
-                      <label> UPS </label>
+                      <label class="drinkcard-cc UPS" for="UPS"></label>
                   </div>
                 </ion-item>              
-            </ion-row>
+            
 
-            <ion-row>
+            
                 <ion-item> <!-- insert buttons stacked here -->
                   <div class="center">
                       <input id="Leopard" name="TType"  type="radio" value="Leopard">                   
-                      <label> Leopard </label>
+                      <label class="drinkcard-cc Leopard" for="Leopard"></label>
                   </div>
                 </ion-item>              
-            </ion-row>
+            
 
-            <ion-row>
+            
                 <ion-item> <!-- insert buttons stacked here -->
                   <div class="center">
                       <input id="MP" name="TType"  type="radio" value="MP">                   
-                      <label> M\&P </label>
+                      <label class="drinkcard-cc MP" for="MP"></label>
                   </div>
                 </ion-item>              
-            </ion-row>
+            
 
-            <ion-row>
+            
                 <ion-item> <!-- insert buttons stacked here -->
                   <div class="center">
                       <input id="FedEx" name="TType"  type="radio" value="FedEx">                   
-                      <label> FedEx </label>
+                      <label class="drinkcard-cc FedEx" for="FedEx"></label>
                   </div>
                 </ion-item>              
-            </ion-row>
-
+            
+</div>
         </div>
 
       </ion-list>

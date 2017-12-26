@@ -1,19 +1,18 @@
-<ion-header>
-  <ion-navbar>
+<ion-header >
+  <ion-navbar color="white">
       <button ion-button menuToggle icon-only>
-          <ion-icon name='menu'></ion-icon>
+          <ion-icon name='menu' class="textcolor"></ion-icon>
         </button>
-    <ion-title>
+    <ion-title >
      Home
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content >
+<ion-content  >
   
-    <button ion-button large full mode="ios" >Create Package</button>
- 
-  <ion-item>
+    
+  <ion-item no-lines>
  <ion-slides pager="true" >
    <ion-slide>
      <img src="./assets/imgs/cat1.jpg">
@@ -26,20 +25,24 @@
       </ion-slide>
  </ion-slides>
 </ion-item>     
+<button ion-button large outline full mode="ios" color="danger" >Transport a Package</button>
 
-<ion-item>
-  <ion-title>
+<ion-card class="bb">
+    <ion-card-header >
     Stats
-  </ion-title>
+  </ion-card-header>
+  <ion-card-content>
   <ion-row>
     <ion-col>
         <div class="progress-wrapper">
-            <round-progress 
+            <round-progress  
+            [background]="'white'"
+            [color]="'red'"
             [current]="62" 
             [max]="100" 
             [radius]="35"
             [stroke]="5"></round-progress>
-            <div class="text">
+            <div class="text" >
               62
             </div>
         </div>
@@ -48,6 +51,8 @@
           
         <div class="progress-wrapper">
           <round-progress 
+          [background]="'white'"
+          [color]="'red'"
           [current]="70" 
           [max]="100" 
           [radius]="35"
@@ -61,6 +66,8 @@
 <ion-col>
     <div class="progress-wrapper">
       <round-progress 
+      [background]="'white'"
+      [color]="'red'"
       [current]="30" 
       [max]="100" 
       [radius]="35"
@@ -71,11 +78,12 @@
     </div>
 </ion-col>
 </ion-row>
- </ion-item>
+</ion-card-content>
+ </ion-card>
  <ion-item>
-   <ion-title>
+   <ion-label>
      Pending Reviews
-   </ion-title>
+   </ion-label>
  </ion-item>
 
 </ion-content>

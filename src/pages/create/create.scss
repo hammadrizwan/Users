@@ -22,8 +22,30 @@
     background-image: url(../assets/imgs/armchair.svg)
 }
 
+.DHL{
+    background-image: url(../assets/imgs/dhl.png)
+}
 
+.TCS{
+    background-image: url(../assets/imgs/TCS.png)
+}
 
+.UPS{
+    background-image: url(../assets/imgs/UPS.png)
+}
+
+.Leopard{
+    background-image: url(../assets/imgs/lcs.jpg)
+}
+
+.MP{
+    background-image: url(../assets/imgs/MNP.png);
+    
+}
+
+.FedEx{
+    background-image: url(../assets/imgs/fedex.jpg)
+}
 
 .cc-selector input:active +.drinkcard-cc{opacity: .9;}
 .cc-selector input:checked +.drinkcard-cc{
@@ -52,42 +74,64 @@
 }
 
 
-.poka:hover{
-    background-color: #bec0c4;
-}
-
-
-
-.center{
-    
-    text-align: center;
-}
-
 ion-chip ion-label{
     font-size: 20px;
 }
-/* Extras */
 
-.labl {
-    width: 400px;
+.lbl{
+    font-size: 20px;
 }
-.labl > input{ /* HIDE RADIO */
-    visibility: hidden; /* Makes input not-clickable */
-    position: absolute; /* Remove input from document flow */
+.donate-now {
+    //list-style-type:none;
+    /* margin:25px 0 0 0;
+    padding:0; */
 }
-.labl > input + div{ /* DIV STYLES */
+
+.donate-now ion-item {
+    //float:left;
+   //margin:0 5px 0 0;
+   //width:100px;
+   height:40px;
+  position:relative;
+  text-align: center;
+}
+
+.donate-now label, .donate-now input {
+   display:block;
+   position:absolute;
+   top:0;
+   left:0;
+   right:0;
+   bottom:0;
+}
+
+.donate-now input[type="radio"] {
+   opacity:0.011;
+   //z-index:100;
+}
+
+.donate-now input[type="radio"]:checked + label {
+   background:#bec0c4;
+}
+
+.donate-now label {
+    padding:5px;
+    //border:1px solid #CCC; 
     cursor:pointer;
-    border:2px solid transparent;
     -webkit-transition: all 100ms ease-in;
-    -moz-transition: all 100ms ease-in;
-         transition: all 100ms ease-in;
+      -moz-transition: all 100ms ease-in;
+             transition: all 100ms ease-in;
+   //z-index:90;
 }
 
- .labl > input:checked + div { /* (RADIO CHECKED) DIV STYLES */
-    
-        background-color: #bec0c4;
-
+.donate-now label:hover {
+    background:#bec0c4;
 }
+
+.center{
+    text-align: center;
+}
+
 
 
 

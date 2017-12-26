@@ -21,3 +21,37 @@ ion-avatar img  {
     // max-width: $a !important;  //any size
     // max-height: $a !important; //any size
     }
+    // .menu-inner {
+    //     .content {
+    //       //background: rgb(165, 12, 12);
+          
+    //     }
+      
+    //     .item {
+    //       background: rgb(165, 12, 12);
+    //     }
+    //   }
+
+    .head{
+      background: #ff3019;
+      background: -moz-linear-gradient(45deg, #ff3019 0%, #cf0404 100%);
+      background: -webkit-linear-gradient(45deg, #ff3019 0%,#cf0404 100%);
+      background: linear-gradient(45deg, #ff3019 0%,#cf0404 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=1 );
+      
+    }
+      .textcolor{
+        color: white;
+    }
+
+
+    .toolbar-background{
+      background: #ff3019;
+      background: -moz-linear-gradient(45deg, #ff3019 0%, #cf0404 100%);
+      background: -webkit-linear-gradient(45deg, #ff3019 0%,#cf0404 100%);
+      background: linear-gradient(45deg, #ff3019 0%,#cf0404 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=1 );
+      
+  }
+
+  

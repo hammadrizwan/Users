@@ -1,36 +1,39 @@
 <ion-menu  swipeEnabled="true"  [content]="content">
-        <ion-content>
-            <ion-item>
+        
+          <ion-header>
+            <ion-item no-lines  class="head">
                 <ion-row>
-                        <ion-col>
-                          <ion-item>
-                          <ion-avatar item-start>
+                        
+                         
+                          <ion-avatar item-start >
                               <img src="./assets/imgs/johnwick.jpg">
                         </ion-avatar>
-                      </ion-item>
-                      </ion-col>
+                    
+                      
                       <ion-col >
-                        <h3>Name:</h3>
-                        <ion-note item-end>John Wick</ion-note>
-                        <h3>Rating</h3>
-                        <ion-note item-end>★ ★ ★ ★ ★ </ion-note>
+                        <h3  class="textcolor">Name:</h3>
+                        <ion-note item-end  class="textcolor">John Wick</ion-note>
+                        <h3  class="textcolor">Rating</h3>
+                        <ion-note item-end  class="textcolor">★ ★ ★ ★ ★ </ion-note>
                       </ion-col>
                     </ion-row>
         </ion-item>
+      </ion-header>
+      <ion-content>
           <ion-list>
               
-                <button ion-item menuClose *ngFor="let p of pages" (click)="openPage(p)">
+                <button ion-item menuClose *ngFor="let p of pages" (click)="openPage(p)" >
                         {{p.title}}
                       </button>
                 
           </ion-list>
-         
-        <ion-footer>
-            <button ion-item (click)="closeMenu()">
+         </ion-content>
+        <ion-footer >
+            <button ion-item (click)="closeMenu()" class="head">
                 Logout
               </button>
         </ion-footer>
-        </ion-content>
+        
       </ion-menu>
       
 
