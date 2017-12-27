@@ -14,6 +14,7 @@ import { InprogressPage } from '../pages/inprogress/inprogress';
 import { PendingPage } from '../pages/pending/pending';
 import { HelpPage } from '../pages/help/help';
 import { NotificationPage } from '../pages/notification/notification';
+import { LandingPage } from '../pages/landing/landing';
 
 
 import { File } from '@ionic-native/file';
@@ -31,7 +32,8 @@ import { Camera } from '@ionic-native/camera';
     InprogressPage,
     PendingPage,
     HelpPage,
-    NotificationPage
+    NotificationPage,
+    LandingPage
   ],
   imports: [
     BrowserModule,
@@ -48,7 +50,8 @@ import { Camera } from '@ionic-native/camera';
     InprogressPage,
     PendingPage,
     HelpPage,
-    NotificationPage
+    NotificationPage,
+    LandingPage
   ],
   providers: [
     File,

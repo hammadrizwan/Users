@@ -27,11 +27,9 @@ export class MyApp {
       
     });
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'Create Package', component: CreatePage },   
+      { title: 'Home', component: HomePage },   
       { title: 'Pending', component: PendingPage },
       { title: 'In Progress', component: InprogressPage },      
-      { title: 'Notifications', component: NotificationPage },  
       { title: 'Help', component:  HelpPage},  
           
     ];

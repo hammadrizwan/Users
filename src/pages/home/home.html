@@ -1,19 +1,9 @@
-<ion-header >
-  <ion-navbar >
-      <button ion-button menuToggle icon-only>
-          <ion-icon name='menu' class="textcolor"></ion-icon>
-        </button>
-    <ion-title >
-     Home
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-tabs selectedIndex="0" tabsPlacement="top">
+  <ion-tab [root]="LandRoot" tabTitle="Home" tabIcon="home" tabsHideOnSubPages="true"></ion-tab>
+  <ion-tab [root]="NotificationRoot" tabTitle="Notifications" tabIcon="notifications" tabsHideOnSubPages="true" ></ion-tab>
+</ion-tabs>
 
-<ion-content  >
-  
-  <img src="./assets/imgs/maps2.png">
-    
-  <!-- <ion-item no-lines>
+ <!-- <ion-item no-lines>
  <ion-slides pager="true" >
    <ion-slide>
      <img src="./assets/imgs/cat1.jpg">
@@ -86,11 +76,3 @@
      Pending Reviews
    </ion-label>
  </ion-item> -->
- <ion-fab class="cc" bottom>
-  <button ion-button round full>CREATE PACKAGE</button>
-</ion-fab>
-</ion-content>
-
-<ion-footer>
-  
-</ion-footer>
