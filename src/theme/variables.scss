@@ -38,7 +38,10 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  themeblue: #033860,
+  lightthemeblue: #2a4255,
+  navbarcolor: #e52d27
 );
 
 
@@ -47,9 +50,9 @@ $colors: (
 // iOS only Sass variables can go here
 
 $navbar-ios-height: 200px;
-$menu-ios-background: rgb(116, 2, 2);
-$toolbar-ios-title-text-color: white;
-$segment-button-ios-background-color-activated: black;
+//$menu-ios-background: color($colors,themeblue);
+
+$segment-button-ios-background-color-activated: color($colors,navbarcolor);
 $segment-button-ios-toolbar-button-max-width: 55px;
 $button-ios-outline-border-color:red;
 // App Material Design Variables
@@ -58,9 +61,12 @@ $button-ios-outline-border-color:red;
 
 $segment-button-md-border-bottom-width: 5px;
 $note-md-color: darken(rgb(104, 104, 104), 10%);
-$menu-md-background: rgb(116, 2, 2);
-$toolbar-md-title-text-color: white;
+$label-md-text-color-focused: color($colors,navbarcolor);
+$text-input-md-highlight-color: color($colors,navbarcolor);
+//$menu-md-background: color($colors,themeblue);
 $button-md-outline-border-color:red;
+$toolbar-background: color($colors,themeblue);
+
 // App Windows Variables
 // --------------------------------------------------
 // Windows only Sass variables can go here

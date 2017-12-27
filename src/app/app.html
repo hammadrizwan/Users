@@ -1,7 +1,7 @@
-<ion-menu  swipeEnabled="true"  [content]="content">
+<ion-menu   swipeEnabled="true"  [content]="content">
         
-          <ion-header>
-            <ion-item no-lines  class="head">
+          <ion-header >
+            <ion-item no-lines  class="menubg">
                 <ion-row>
                         
                          
@@ -19,17 +19,17 @@
                     </ion-row>
         </ion-item>
       </ion-header>
-      <ion-content>
+      <ion-content class="menubg">
           <ion-list>
               
-                <button ion-item menuClose *ngFor="let p of pages" (click)="openPage(p)" >
+                <button ion-item menuClose *ngFor="let p of pages" (click)="openPage(p)" class="menubg">
                         {{p.title}}
                       </button>
                 
           </ion-list>
          </ion-content>
-        <ion-footer >
-            <button ion-item (click)="closeMenu()" class="head">
+        <ion-footer class="menubg">
+            <button ion-item (click)="closeMenu()"  class="menubg">
                 Logout
               </button>
         </ion-footer>

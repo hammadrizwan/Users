@@ -39,7 +39,7 @@
 }
 
 .MP{
-    background-image: url(../assets/imgs/MNP.png);
+    background-image: url(../assets/imgs/mnp.png);
     
 }
 
@@ -58,7 +58,6 @@
     background-size:contain;
     background-repeat:no-repeat;
     display:inline-block;
-    
     width:60px;height:30px;
     -webkit-transition: all 100ms ease-in;
        -moz-transition: all 100ms ease-in;
@@ -132,6 +131,8 @@ ion-chip ion-label{
     text-align: center;
 }
 
-
+.bgg{
+    background-color: color($colors,light);
+}
 
 

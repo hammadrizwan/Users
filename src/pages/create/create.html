@@ -31,7 +31,7 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding class="bgg">
 
       <div [ngSwitch]="pet">
         <ion-list no-lines *ngSwitchCase="'S1'">
@@ -89,10 +89,10 @@
 
                     <ion-row>
                         <ion-col>
-                      <ion-item>
+                      <ion-item >
                           <div class="center">
                             <input id="tv" name="PSize" [(ngModel)]="PSize" type="radio" value="Large">
-                            <label  class="drinkcard-cc tv" for="tv"></label>       
+                            <label  class="drinkcard-cc tv" for="tv" ></label>       
                             </div>                 
                       </ion-item>
                           </ion-col>
@@ -253,7 +253,7 @@
 
         
         <ion-item>
-          <ion-label floating>Pickup Address: </ion-label>
+          <ion-label floating >Pickup Address: </ion-label>
           <ion-textarea ></ion-textarea>
         </ion-item>
 
