@@ -15,12 +15,15 @@ import { PendingPage } from '../pages/pending/pending';
 import { HelpPage } from '../pages/help/help';
 import { NotificationPage } from '../pages/notification/notification';
 import { LandingPage } from '../pages/landing/landing';
-
+import { ActivePage } from '../pages/active/active';
+import { AllPage } from '../pages/all/all';
+import { ProfilePage } from '../pages/profile/profile';
 
 import { File } from '@ionic-native/file';
 import { Transfer, TransferObject } from '@ionic-native/transfer';
 import { FilePath } from '@ionic-native/file-path';
 import { Camera } from '@ionic-native/camera';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { Camera } from '@ionic-native/camera';
     PendingPage,
     HelpPage,
     NotificationPage,
-    LandingPage
+    LandingPage,
+    ActivePage,
+    AllPage,
+    ProfilePage
   ],
   imports: [
     BrowserModule,
@@ -51,7 +57,10 @@ import { Camera } from '@ionic-native/camera';
     PendingPage,
     HelpPage,
     NotificationPage,
-    LandingPage
+    LandingPage,
+    ActivePage,
+    AllPage,
+    ProfilePage
   ],
   providers: [
     File,

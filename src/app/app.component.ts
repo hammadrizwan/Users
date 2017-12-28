@@ -11,6 +11,9 @@ import { InprogressPage } from '../pages/inprogress/inprogress';
 import { PendingPage } from '../pages/pending/pending';
 import { HelpPage } from '../pages/help/help';
 import { NotificationPage } from '../pages/notification/notification';
+import { AllPage } from '../pages/all/all';
+import { ActivePage } from '../pages/active/active';
+import { ProfilePage } from '../pages/profile/profile';
 @Component({
   templateUrl: 'app.html'
 })
@@ -28,8 +31,10 @@ export class MyApp {
     });
     this.pages = [
       { title: 'Home', component: HomePage },   
-      { title: 'Pending', component: PendingPage },
-      { title: 'In Progress', component: InprogressPage },      
+      { title: 'All Packages', component: AllPage },
+      { title: 'Active Packages', component: ActivePage },
+      { title: 'In Transit', component: InprogressPage },
+      { title: 'Pending Reviews', component: PendingPage },
       { title: 'Help', component:  HelpPage},  
           
     ];
@@ -37,6 +42,10 @@ export class MyApp {
   
   openPage(p){
     this.nav.setRoot(p.component);
+  }
+
+  profile(){
+    this.nav.push(ProfilePage)
   }
 }
 
