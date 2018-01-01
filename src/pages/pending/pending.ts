@@ -21,5 +21,7 @@ export class PendingPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad PendingPage');
   }
-
+  onModelChange($event){
+    
+  }
 }
