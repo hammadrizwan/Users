@@ -144,16 +144,17 @@
     </ion-list>
 
     <!-- Insert the cc selector here -->
+    
     <ion-list no-lines *ngSwitchCase="'S3'">
 
       <div *ngIf="TType === 'FLance'">
-
+        <div class="cc-selector">
         <ion-row *ngIf="PSize === 'Small'">
           <ion-item>
             <!-- insert buttons stacked here -->
             <div class="center">
               <input id="Bike" name="TType" type="radio" value="Bike">
-              <label> Bike </label>
+              <label class="drinkcard-cc Bike"  for="Bike"></label>
             </div>
           </ion-item>
         </ion-row>
@@ -163,7 +164,7 @@
             <!-- insert buttons stacked here -->
             <div class="center">
               <input id="Car" name="TType" type="radio" value="Car">
-              <label> Car </label>
+              <label class="drinkcard-cc Car" for="Car"></label>
             </div>
           </ion-item>
         </ion-row>
@@ -173,7 +174,7 @@
             <!-- insert buttons stacked here -->
             <div class="center">
               <input id="Pickup" name="TType" type="radio" value="Pickup">
-              <label> Pickup </label>
+              <label class="drinkcard-cc Pickup" for="Pickup"></label>
             </div>
           </ion-item>
         </ion-row>
@@ -183,13 +184,13 @@
             <!-- insert buttons stacked here -->
             <div class="center">
               <input id="Truck" name="TType" type="radio" value="Truck">
-              <label> Truck </label>
+              <label class="drinkcard-cc Truck" for="Truck"></label>
             </div>
           </ion-item>
         </ion-row>
 
       </div>
-
+</div>
       <div *ngIf="TType === 'CService'">
         <div class="cc-selector">
           <ion-item class="center">
@@ -197,63 +198,76 @@
               Select Courier Service
             </ion-label>
           </ion-item>
-          <ion-item>
+          <ion-card>
+             <ion-item>
             <!-- insert buttons stacked here -->
             <div class="center">
               <input id="DHL" name="TType" type="radio" value="DHL">
               <label class="drinkcard-cc DHL" for="DHL"></label>
             </div>
           </ion-item>
+          </ion-card>
+         
 
 
-
-          <ion-item>
+          <ion-card>
+            <ion-item>
             <!-- insert buttons stacked here -->
             <div class="center">
               <input id="TCS" name="TType" type="radio" value="TCS">
               <label class="drinkcard-cc TCS" for="TCS"></label>
             </div>
           </ion-item>
+          </ion-card>
+          
 
 
-
-          <ion-item>
+          <ion-card>
+            <ion-item>
             <!-- insert buttons stacked here -->
             <div class="center">
               <input id="UPS" name="TType" type="radio" value="UPS">
               <label class="drinkcard-cc UPS" for="UPS"></label>
             </div>
           </ion-item>
+          </ion-card>
+          
 
 
-
-          <ion-item>
+          <ion-card>
+            <ion-item>
             <!-- insert buttons stacked here -->
             <div class="center">
               <input id="Leopard" name="TType" type="radio" value="Leopard">
               <label class="drinkcard-cc Leopard" for="Leopard"></label>
             </div>
           </ion-item>
+          </ion-card>
+          
 
 
-
-          <ion-item>
+          <ion-card>
+            <ion-item>
             <!-- insert buttons stacked here -->
             <div class="center">
               <input id="MP" name="TType" type="radio" value="MP">
               <label class="drinkcard-cc MP" for="MP"></label>
             </div>
           </ion-item>
+          </ion-card>
+          
 
 
-
-          <ion-item>
+          <ion-card>
+            <ion-item>
             <!-- insert buttons stacked here -->
             <div class="center">
               <input id="FedEx" name="TType" type="radio" value="FedEx">
               <label class="drinkcard-cc FedEx" for="FedEx"></label>
             </div>
           </ion-item>
+          </ion-card>
+          
 
         </div>
       </div>
@@ -349,7 +363,7 @@
         </ion-card-content>
       </ion-card>
       <ion-item>
-        <button ion-button full round large color="secondary">CREATE</button>
+        <button ion-button full large color="secondary">CREATE</button>
       </ion-item>
 
     </ion-list>

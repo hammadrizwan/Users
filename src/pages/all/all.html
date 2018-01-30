@@ -19,9 +19,9 @@
 <ion-content class="bgg">
   <ion-card>
     <img src="./assets/imgs/welltaped.jpg" />
-    <ion-fab right top>
-      <button class="danger" ion-fab>
-        <ion-icon name="trash"></ion-icon>
+    <ion-fab  right top>
+      <button class="buttoncolor" ion-fab>
+        <ion-icon name="trash" ></ion-icon>
       </button>
     </ion-fab>
 
@@ -37,27 +37,58 @@
       </h2>
     </ion-item>
 
-    <ion-row>
-      <ion-col col-4>
-        <ion-item>
-          <ion-icon class="ioniconcolor1" name="cash" large></ion-icon>
-          <p>RS:2500</p>
-        </ion-item>
-      </ion-col>
-      <ion-col col-4>
-        <ion-item>
-          <ion-icon class="ioniconcolor1" name="ios-open" large></ion-icon>
-          <p>Small</p>
-        </ion-item>
-      </ion-col>
-      <ion-col col-4>
-        <ion-item>
-          <ion-icon class="ioniconcolor1" name="md-car" large></ion-icon>
-          <p>Car</p>
-        </ion-item>
-      </ion-col>
-    </ion-row>
+    <button class="colornavbar" ion-button full (click)="packagedetails()">
+      View Details
+    </button>
   </ion-card>
  
+  <ion-card>
+      <img src="./assets/imgs/welltaped.jpg" />
+      <ion-fab  right top>
+        <button class="buttoncolor" ion-fab>
+          <ion-icon name="trash" ></ion-icon>
+        </button>
+      </ion-fab>
   
+      <ion-item>
+        <ion-icon class="ioniconcolor1" name="pin" item-start large></ion-icon>
+        <h2>To: 24D Bahar Shah Rd, Lahore
+        </h2>
+      </ion-item>
+  
+      <ion-item>
+        <ion-icon class="ioniconcolor1" name="radio-button-off" item-left large></ion-icon>
+        <h2>From: 161 main peco road Lahore
+        </h2>
+      </ion-item>
+  
+      <button class="colornavbar" ion-button full (click)="packagedetails()">
+        View Details
+      </button>
+    </ion-card>
+
+    <ion-card>
+        <img src="./assets/imgs/welltaped.jpg" />
+        <ion-fab  right top>
+          <button class="buttoncolor" ion-fab>
+            <ion-icon name="trash" ></ion-icon>
+          </button>
+        </ion-fab>
+    
+        <ion-item>
+          <ion-icon class="ioniconcolor1" name="pin" item-start large></ion-icon>
+          <h2>To: 24D Bahar Shah Rd, Lahore
+          </h2>
+        </ion-item>
+    
+        <ion-item>
+          <ion-icon class="ioniconcolor1" name="radio-button-off" item-left large></ion-icon>
+          <h2>From: 161 main peco road Lahore
+          </h2>
+        </ion-item>
+    
+        <button class="colornavbar" ion-button full (click)="packagedetails()">
+          View Details
+        </button>
+      </ion-card>
 </ion-content>

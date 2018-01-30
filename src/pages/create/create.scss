@@ -47,6 +47,21 @@
     background-image: url(../assets/imgs/fedex.jpg)
 }
 
+.Bike{
+    background-image: url(../assets/imgs/motorcycle.svg)
+}
+
+.Car{
+    background-image: url(../assets/imgs/sedan-car-model.svg)
+}
+
+.Pickup{
+    background-image: url(../assets/imgs/loaded-truck-side-view.svg)
+}
+
+.Truck{
+    background-image: url(../assets/imgs/delivery-truck.svg)
+}
 .cc-selector input:active +.drinkcard-cc{opacity: .9;}
 .cc-selector input:checked +.drinkcard-cc{
     -webkit-filter: none;
@@ -58,7 +73,7 @@
     background-size:contain;
     background-repeat:no-repeat;
     display:inline-block;
-    width:60px;height:30px;
+    width:100px;height:70px;
     -webkit-transition: all 100ms ease-in;
        -moz-transition: all 100ms ease-in;
             transition: all 100ms ease-in;
