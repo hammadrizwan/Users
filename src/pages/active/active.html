@@ -18,93 +18,81 @@
 
 <ion-content class="bgg">
   <ion-card>
-  <ion-fab right >
-      <button ion-fab color="danger"><ion-icon name="trash"></ion-icon></button>
-  </ion-fab>
-    <ion-row>      
-        <img src="./assets/imgs/welltaped.jpg"/>
-      <ion-col>
-      <ion-item>
-        <ion-label>Fragile Box</ion-label>
-      </ion-item>
-      <ion-item>
-          <label>To:</label>
-          <p>24D Bahar Shah Rd,
-             Lahore</p>
-          <label>From:</label>
-          <p> 161 main peco road
-             Lahore</p>
-      </ion-item>
-    </ion-col>
-    </ion-row>
-  
-      <ion-card-content>
+      <div style="position: relative">
+    <img src="./assets/imgs/welltaped.jpg" />
+    <ion-fab  right top>
+      <button class="buttoncolor" ion-fab>
+        <ion-icon name="trash" ></ion-icon>
+      </button>
+    </ion-fab>
+</div>
+    <ion-item>
+      <ion-icon class="ioniconcolor1" name="pin" item-start large></ion-icon>
+      <h2>To: 24D Bahar Shah Rd, Lahore
+      </h2>
+    </ion-item>
 
-       <ion-row >
-         <ion-col col-4 style="border-right : 1px solid rgb(109, 109, 109) "><img class="cl"  src="./assets/imgs/dropbox.svg"></ion-col>
-         <ion-col col-4 style="border-right : 1px solid rgb(109, 109, 109) ">Rs. 250/-</ion-col>
-         <ion-col col-4>Car</ion-col>
-       </ion-row>
-      </ion-card-content>
+    <ion-item>
+      <ion-icon class="ioniconcolor1" name="radio-button-off" item-left large></ion-icon>
+      <h2>From: 161 main peco road Lahore
+      </h2>
+    </ion-item>
+
+    <button class="colornavbar" ion-button full (click)="packagedetails()">
+      View Details
+    </button>
+  </ion-card>
+ 
+  <ion-card>
+      <div style="position: relative">
+      <img src="./assets/imgs/welltaped.jpg" />
+      <ion-fab  right top>
+        <button class="buttoncolor" ion-fab>
+          <ion-icon name="trash" ></ion-icon>
+        </button>
+      </ion-fab>
+  </div>
+      <ion-item>
+        <ion-icon class="ioniconcolor1" name="pin" item-start large></ion-icon>
+        <h2>To: 24D Bahar Shah Rd, Lahore
+        </h2>
+      </ion-item>
+  
+      <ion-item>
+        <ion-icon class="ioniconcolor1" name="radio-button-off" item-left large></ion-icon>
+        <h2>From: 161 main peco road Lahore
+        </h2>
+      </ion-item>
+  
+      <button class="colornavbar" ion-button full (click)="packagedetails()">
+        View Details
+      </button>
     </ion-card>
 
     <ion-card>
-        <ion-fab right >
-            <button ion-fab color="danger"><ion-icon name="trash"></ion-icon></button>
+        <div style="position: relative">
+        <img src="./assets/imgs/welltaped.jpg" />
+        <ion-fab  right top>
+          <button class="buttoncolor" ion-fab>
+            <ion-icon name="trash" ></ion-icon>
+          </button>
         </ion-fab>
-        <ion-row>      
-            <img src="./assets/imgs/welltaped.jpg"/>
-          <ion-col>
-          <ion-item>
-            <ion-label>Fragile Box</ion-label>
-          </ion-item>
-          <ion-item>
-              <label>To:</label>
-              <p>24D Bahar Shah Rd,
-                 Lahore</p>
-              <label>From:</label>
-              <p> 161 main peco road
-                 Lahore</p>
-          </ion-item>
-        </ion-col>
-        </ion-row>
-      
-          <ion-card-content>
-           <ion-row >
-             <ion-col col-4 style="border-right : 1px solid rgb(109, 109, 109) "><img class="cl"  src="./assets/imgs/dropbox.svg"></ion-col>
-             <ion-col col-4 style="border-right : 1px solid rgb(109, 109, 109) ">Rs. 250/-</ion-col>
-             <ion-col col-4>Car</ion-col>
-           </ion-row>
-          </ion-card-content>
-        </ion-card>
-        <ion-card>
-            <ion-fab right>
-                <button ion-fab color="danger"><ion-icon name="trash"></ion-icon></button>
-            </ion-fab>
-            <ion-row>      
-                <img src="./assets/imgs/welltaped.jpg"/>
-              <ion-col>
-              <ion-item>
-                <ion-label>Fragile Box</ion-label>
-              </ion-item>
-              <ion-item>
-                  <label>To:</label>
-                  <p>24D Bahar Shah Rd,
-                     Lahore</p>
-                  <label>From:</label>
-                  <p> 161 main peco road
-                     Lahore</p>
-              </ion-item>
-            </ion-col>
-            </ion-row>
-          
-              <ion-card-content>
-               <ion-row >
-                 <ion-col col-4 style="border-right : 1px solid rgb(109, 109, 109) "><img class="cl"  src="./assets/imgs/dropbox.svg"></ion-col>
-                 <ion-col col-4 style="border-right : 1px solid rgb(109, 109, 109) ">Rs. 250/-</ion-col>
-                 <ion-col col-4>Car</ion-col>
-               </ion-row>
-              </ion-card-content>
-            </ion-card>
+    </div>
+        <ion-item>
+          <ion-icon class="ioniconcolor1" name="pin" item-start large></ion-icon>
+          <h2>To: 24D Bahar Shah Rd, Lahore
+          </h2>
+        </ion-item>
+    
+        <ion-item>
+          <ion-icon class="ioniconcolor1" name="radio-button-off" item-left large></ion-icon>
+          <h2>From: 161 main peco road Lahore
+          </h2>
+        </ion-item>
+    
+        <button class="colornavbar" ion-button full (click)="packagedetails()">
+          View Details
+        </button>
+      </ion-card>
 </ion-content>
 

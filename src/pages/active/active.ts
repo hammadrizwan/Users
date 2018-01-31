@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { PackagedetailPage } from '../../pages/packagedetail/packagedetail';
 
 /**
  * Generated class for the ActivePage page.
@@ -21,5 +22,7 @@ export class ActivePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ActivePage');
   }
-
+  packagedetails(){
+    this.navCtrl.push(PackagedetailPage);
+  }
 }

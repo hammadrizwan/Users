@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { PackagedetailPage } from '../../pages/packagedetail/packagedetail';
+
 /**
- * Generated class for the AllPage page.
+ * Generated class for the PackagedetailPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,20 +10,16 @@ import { PackagedetailPage } from '../../pages/packagedetail/packagedetail';
 
 @IonicPage()
 @Component({
-  selector: 'page-all',
-  templateUrl: 'all.html',
+  selector: 'page-packagedetail',
+  templateUrl: 'packagedetail.html',
 })
-export class AllPage {
+export class PackagedetailPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AllPage');
+    console.log('ionViewDidLoad PackagedetailPage');
   }
 
-
-  packagedetails(){
-    this.navCtrl.push(PackagedetailPage);
-  }
 }

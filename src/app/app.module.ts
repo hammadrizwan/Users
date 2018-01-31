@@ -18,6 +18,7 @@ import { LandingPage } from '../pages/landing/landing';
 import { ActivePage } from '../pages/active/active';
 import { AllPage } from '../pages/all/all';
 import { ProfilePage } from '../pages/profile/profile';
+import { PackagedetailPage } from '../pages/packagedetail/packagedetail';
 
 import { File } from '@ionic-native/file';
 import { Transfer, TransferObject } from '@ionic-native/transfer';
@@ -40,7 +41,8 @@ import { Ionic2RatingModule } from 'ionic2-rating';
     LandingPage,
     ActivePage,
     AllPage,
-    ProfilePage
+    ProfilePage,
+    PackagedetailPage
   ],
   imports: [
     BrowserModule,
@@ -62,7 +64,8 @@ import { Ionic2RatingModule } from 'ionic2-rating';
     LandingPage,
     ActivePage,
     AllPage,
-    ProfilePage
+    ProfilePage,
+    PackagedetailPage
   ],
   providers: [
     File,
